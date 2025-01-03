@@ -1,31 +1,4 @@
-# Fichiers avec des données confidentielles
-.env
 
-# Cache Python
-**pycache**/
-*.py[cod]
-*$py.class
-
-# Environnement virtuel 
-venv/
-env/
-ENV/
-
-# Fichiers IDE et éditeurs
-.idea/
-.vscode/
-*.swp
-*.swo
-.DS_Store
-
-# Fichiers de base de données et logs
-*.log
-*.sqlite
-chroma_db/
-
-# Fichiers temporaires
-temp/
-tmp/
 
 # Secret
 .streamlit/secrets.toml
