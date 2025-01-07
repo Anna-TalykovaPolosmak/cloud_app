@@ -10,7 +10,7 @@ import pandas as pd
 from utils.utils import load_css, search_movies, get_recommendations
 from chatbot.chatbot import MovieChatbot
 
-# Chargement du fichier CSS pour le style de l'application
+# Chargement du fichier CSS pour le style de l'application # jjjjjj
 load_css('css/style.css')
 
 try:

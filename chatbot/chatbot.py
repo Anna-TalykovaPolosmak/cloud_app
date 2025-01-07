@@ -5,7 +5,7 @@ from langchain.vectorstores import Chroma  # Pour la base de données vectoriell
 from langchain.embeddings import OpenAIEmbeddings  # Pour la création d'embeddings
 import os  # Pour les opérations sur le système de fichiers
 
-# Configuration du style CSS pour l'interface utilisateur
+# Configuration du style CSS pour l'interface utilisateur #__8
 st.markdown("""
     <style>
     .stChatMessage {  # Style pour les messages du chat
@@ -64,8 +64,8 @@ class MovieChatbot:
             self.initialize_session_state()
             
             # Configuration des clients API
-            self.client = OpenAI(api_key=st.secrets["OPENAI_API_KEY"])  # Client pour l'API OpenAI
-            self.embeddings = OpenAIEmbeddings(openai_api_key=st.secrets["OPENAI_API_KEY"])  # Configuration des embeddings
+            self.client = OpenAI(api_key=st.secrets["OpenAI_key"])  # Client pour l'API OpenAI
+            self.embeddings = OpenAIEmbeddings(openai_api_key=st.secrets["OpenAI_key"])  # Configuration des embeddings
             
             # Chargement des fichiers CSV contenant les données des films
             self.films = pd.read_csv("csv/films_def.csv")  # Données principales des films
